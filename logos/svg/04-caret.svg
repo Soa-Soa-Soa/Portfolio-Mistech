@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" width="240" height="120">
+  <text x="0" y="92" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="92" font-weight="500" fill="#6B4EFF">&lt;</text>
+  <text x="56" y="86" font-family="Satoshi, sans-serif" font-size="62" font-weight="800" fill="#0A0812" letter-spacing="-0.05em">MT</text>
+  <text x="160" y="92" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="92" font-weight="500" fill="#6B4EFF">/</text>
+  <text x="186" y="92" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="92" font-weight="500" fill="#D5F25E">&gt;</text>
+</svg>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>MisTech — 7 SVG concepts</title>
+  <style>
+    @import url('https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,wght@1,400&display=swap');
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 60px 40px;
+      background: #0A0812;
+      color: #F4EFE3;
+      font-family: 'Satoshi', system-ui, sans-serif;
+      min-height: 100vh;
+    }
+    .page-head {
+      max-width: 1200px;
+      margin: 0 auto 48px;
+    }
+    .page-head h1 {
+      font-size: 56px;
+      font-weight: 800;
+      letter-spacing: -0.045em;
+      margin: 0 0 8px;
+      line-height: 1;
+    }
+    .page-head h1 em {
+      font-family: 'Newsreader', serif;
+      font-style: italic;
+      font-weight: 400;
+      color: #D5F25E;
+    }
+    .page-head p {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #8A839A;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #14111F;
+      border: 1px solid rgba(244,239,227,0.08);
+      border-radius: 14px;
+      padding: 32px 24px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .card:hover { border-color: #D5F25E; transform: translateY(-4px); }
+    .card-frame {
+      width: 200px; height: 200px;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(244,239,227,0.02);
+      border-radius: 10px;
+      padding: 24px;
+    }
+    .card-frame svg { max-width: 100%; max-height: 100%; }
+    .card-meta {
+      text-align: center;
+      display: flex; flex-direction: column; gap: 4px;
+      width: 100%;
+    }
+    .card-name {
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+    }
+    .card-file {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #8A839A;
+      letter-spacing: 0.08em;
+    }
+    .card-dl {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: transparent;
+      border: 1px solid rgba(244,239,227,0.18);
+      border-radius: 999px;
+      color: #F4EFE3;
+      text-decoration: none;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      transition: all 0.2s;
+      margin-top: 4px;
+    }
+    .card-dl:hover {
+      background: #D5F25E;
+      color: #0A0812;
+      border-color: #D5F25E;
+    }
+    .readme-link {
+      display: block;
+      max-width: 1200px;
+      margin: 48px auto 0;
+      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #8A839A;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .readme-link a { color: #D5F25E; }
+  </style>
+</head>
+<body>
+  <header class="page-head">
+    <h1>7 logos <em>SVG.</em></h1>
+    <p>MisTech · 2026 · directions retenues · libres d'usage interne</p>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <div class="card-frame"><object data="04-caret.svg" type="image/svg+xml"></object></div>
+      <div class="card-meta">
+        <div class="card-name">Caret &lt;MT/&gt;</div>
+        <div class="card-file">04-caret.svg</div>
+        <a class="card-dl" href="04-caret.svg" download>↓ Télécharger</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-frame"><object data="05-monogram.svg" type="image/svg+xml"></object></div>
+      <div class="card-meta">
+        <div class="card-name">M-T Monogram</div>
+        <div class="card-file">05-monogram.svg</div>
+        <a class="card-dl" href="05-monogram.svg" download>↓ Télécharger</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-frame"><object data="10-chip.svg" type="image/svg+xml"></object></div>
+      <div class="card-meta">
+        <div class="card-name">Silicon Chip</div>
+        <div class="card-file">10-chip.svg</div>
+        <a class="card-dl" href="10-chip.svg" download>↓ Télécharger</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-frame"><object data="11-ligature.svg" type="image/svg+xml"></object></div>
+      <div class="card-meta">
+        <div class="card-name">MT Ligature</div>
+        <div class="card-file">11-ligature.svg</div>
+        <a class="card-dl" href="11-ligature.svg" download>↓ Télécharger</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-frame"><object data="13-lemniscate.svg" type="image/svg+xml"></object></div>
+      <div class="card-meta">
+        <div class="card-name">Lemniscate ∞</div>
+        <div class="card-file">13-lemniscate.svg</div>
+        <a class="card-dl" href="13-lemniscate.svg" download>↓ Télécharger</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-frame"><object data="16-iso-block.svg" type="image/svg+xml"></object></div>
+      <div class="card-meta">
+        <div class="card-name">Iso Block</div>
+        <div class="card-file">16-iso-block.svg</div>
+        <a class="card-dl" href="16-iso-block.svg" download>↓ Télécharger</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-frame"><object data="25-qr-finder.svg" type="image/svg+xml"></object></div>
+      <div class="card-meta">
+        <div class="card-name">QR Finder</div>
+        <div class="card-file">25-qr-finder.svg</div>
+        <a class="card-dl" href="25-qr-finder.svg" download>↓ Télécharger</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="readme-link">
+    ↳ Notes d'usage &amp; polices : <a href="README.md">README.md</a>
+  </div>
+</body>
+</html>

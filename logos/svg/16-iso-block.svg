@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <polygon points="100,30 170,70 100,110 30,70" fill="#D5F25E"></polygon>
+  <polygon points="100,110 170,70 170,150 100,190" fill="#6B4EFF"></polygon>
+  <polygon points="100,110 30,70 30,150 100,190" fill="#4A2EE8"></polygon>
+  <text x="80" y="78" font-family="Satoshi, sans-serif" font-weight="800" font-size="32" fill="#0A0812" letter-spacing="-0.04em">MT</text>
+  <line x1="100" y1="110" x2="100" y2="190" stroke="#0A0812" stroke-width="1.5" opacity="0.4"></line>
+</svg>
