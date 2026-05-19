@@ -4809,3 +4809,30 @@
     transform: scale(0.55);
   }
 }
+
+
+/* ============ Mobile v7 — About hero font size aligned with Home ============ */
+@media (max-width: 720px) {
+  /* About page hero title — same scale as .hero-title on home */
+  .page section:first-of-type h1.display {
+    font-size: clamp(28px, 8vw, 40px) !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.035em !important;
+  }
+}
+@media (max-width: 480px) {
+  .page section:first-of-type h1.display {
+    font-size: clamp(26px, 7.5vw, 32px) !important;
+    line-height: 1.05 !important;
+  }
+  .page section:first-of-type p {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+    margin-top: 24px !important;
+  }
+}
+@media (max-width: 380px) {
+  .page section:first-of-type h1.display {
+    font-size: clamp(22px, 7vw, 28px) !important;
+  }
+}
