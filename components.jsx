@@ -226,7 +226,8 @@ function CursorBlob() {
 }
 
 /* ---- Project visual: tech mockup chooser ---- */
-function ProjectShape({ shape, accent, link, videoSrc, name }) {
+function ProjectShape({ shape, accent, link, videoSrc, name, slug }) {
+  if (slug === 'pharmacie-gestion')   return <PharmacyDemo />;
   if (shape === 'live' && link) return <LivePreview url={link} label={name} />;
   if (shape === 'video')        return <VideoSlot src={videoSrc} label={name ? name.toLowerCase().replace(/\s+/g, '-') + '.mp4' : 'demo.mp4'} />;
   if (shape === 'dashboard')    return <DashboardMockup dark />;
