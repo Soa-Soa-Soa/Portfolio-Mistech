@@ -2,6 +2,19 @@
 const { useState, useEffect, useRef, useCallback } = React;
 
 /* ---- Icons ---- */
+const LogoChip = ({ size = 24 }) => (
+  <svg viewBox="0 0 160 160" width={size} height={size} className="logo-chip" aria-hidden="true">
+    {[32, 54, 76, 98, 120].map(x => <rect key={'t'+x} x={x} y="6" width="10" height="14" fill="var(--violet)" rx="1" />)}
+    {[32, 54, 76, 98, 120].map(x => <rect key={'b'+x} x={x} y="140" width="10" height="14" fill="var(--violet)" rx="1" />)}
+    {[32, 54, 76, 98, 120].map(y => <rect key={'l'+y} x="6" y={y} width="14" height="10" fill="var(--violet)" rx="1" />)}
+    {[32, 54, 76, 98, 120].map(y => <rect key={'r'+y} x="140" y={y} width="14" height="10" fill="var(--violet)" rx="1" />)}
+    <rect x="20" y="20" width="120" height="120" fill="var(--ink-2)" stroke="var(--violet)" strokeWidth="3" rx="10" />
+    <text x="80" y="96" textAnchor="middle" fontFamily="var(--f-display)" fontWeight="800" fontSize="56" fill="var(--paper)" letterSpacing="-0.04em">MT</text>
+    <circle cx="36" cy="36" r="6" fill="var(--lime)" />
+  </svg>
+);
+
+/* ---- Icons ---- */
 const Icon = {
   Sun: (p) => <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.6" {...p}><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>,
   Moon: (p) => <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.6" {...p}><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>,
@@ -66,8 +79,8 @@ function Nav({ page, setPage, theme, setTheme, lang, setLang, t }) {
   return (
     <nav className="nav">
       <div className="wrap nav-row">
-        <button onClick={() => go('home')} style={{ border: 0, background: 'transparent', padding: 0 }} className="nav-logo" aria-label="Home">
-          <span className="logo-dot" />
+        <button onClick={() => go('home')} style={{ border: 0, background: 'transparent', padding: 0, cursor: 'pointer' }} className="nav-logo" aria-label="Home">
+          <LogoChip size={28} />
           <span><span style={{ fontStyle: 'italic' }}>Mis</span>Tech<span style={{ color: 'var(--accent)' }}>.</span></span>
         </button>
         <div className="nav-links">
@@ -140,7 +153,7 @@ function Footer({ t, setPage, lang }) {
         <div className="footer-grid">
           <div>
             <div className="nav-logo" style={{ marginBottom: 14 }}>
-              <span className="logo-dot" />
+              <LogoChip size={36} />
               <span style={{ fontSize: 26 }}><span style={{ fontStyle: 'italic' }}>Mis</span>Tech<span style={{ color: 'var(--accent)' }}>.</span></span>
             </div>
             <p style={{ maxWidth: 360, color: 'var(--fg-soft)', fontSize: 15, lineHeight: 1.55, margin: 0 }}>
@@ -280,4 +293,4 @@ function FooterBigMarquee({ lang }) {
   );
 }
 
-Object.assign(window, { Icon, Reveal, useReveal, Nav, Marquee, Footer, CursorBlob, ProjectShape, FooterTicker, FooterBigMarquee });
+Object.assign(window, { Icon, LogoChip, Reveal, useReveal, Nav, Marquee, Footer, CursorBlob, ProjectShape, FooterTicker, FooterBigMarquee });
