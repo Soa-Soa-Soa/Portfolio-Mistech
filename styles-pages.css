@@ -3921,3 +3921,891 @@
   background: var(--lime);
   color: var(--ink);
 }
+
+
+/* ============ Mobile: Home hero ============ */
+@media (max-width: 720px) {
+  .hero { padding: 32px 0 24px; }
+  .hero-split { gap: 28px; }
+  .hero-title { font-size: clamp(34px, 9vw, 56px) !important; }
+  .hero-lead { font-size: 15px; line-height: 1.55; }
+  .hero-art { min-height: 320px; aspect-ratio: 1 / 0.9; }
+  .hero-comp-main { width: 88%; }
+  .hero-comp-phone { right: -8%; }
+  .hero-comp-phone .mock-phone { width: 110px; }
+  .hero-comp-term { width: 56%; left: -8%; }
+}
+
+@media (max-width: 480px) {
+  .hero { padding: 24px 0 16px; }
+  .hero-title { font-size: clamp(28px, 9.5vw, 42px) !important; line-height: 1; }
+  .hero-lead { font-size: 14px; margin-top: 18px; }
+  .hero-actions { margin-top: 22px; }
+  .hero-art { min-height: 260px; }
+  .hero-comp-phone .mock-phone { width: 92px; }
+  .hero-stacked .hero-title { font-size: clamp(46px, 18vw, 84px) !important; }
+}
+
+@media (max-width: 380px) {
+  .hero-title { font-size: clamp(24px, 9.5vw, 36px) !important; }
+  .hero-art { min-height: 220px; }
+  .hero-comp-phone .mock-phone { width: 78px; }
+}
+
+/* ============ Mobile: Section headers ============ */
+@media (max-width: 720px) {
+  .sec-head { margin-bottom: 32px; gap: 14px; }
+  .sec-head h2 { font-size: clamp(26px, 7vw, 36px) !important; }
+}
+
+/* ============ Mobile: Services interactive showcase ============ */
+@media (max-width: 720px) {
+  .srv-show-item { padding: 16px 0; gap: 12px; }
+  .srv-show-name { font-size: clamp(18px, 5vw, 22px) !important; }
+  .srv-show-frame { aspect-ratio: 16 / 11; }
+  .srv-show-info { gap: 12px; }
+  .srv-show-desc { font-size: 17px !important; line-height: 1.35; }
+  .srv-show-pill { font-size: 10px; }
+}
+@media (max-width: 480px) {
+  .srv-show-item { padding: 14px 0; }
+  .srv-show-n { font-size: 10px; }
+  .srv-show-name { font-size: 17px !important; }
+  .srv-show-frame { aspect-ratio: 16 / 12; }
+}
+
+/* ============ Mobile: Featured deck ============ */
+@media (max-width: 720px) {
+  .deck-stage { aspect-ratio: 3 / 4; max-width: 100%; }
+  .deck-card { padding: 16px; gap: 12px; }
+  .deck-card-title { font-size: 22px !important; }
+  .deck-card-desc { font-size: 13px; line-height: 1.45; }
+  .deck-card-visual { aspect-ratio: 16/10; }
+  .deck-controls { gap: 8px; }
+  .deck-arr { width: 38px; height: 38px; }
+  .deck-dot-name { display: none; }
+  .deck-dot { padding: 6px 10px; }
+}
+
+/* ============ Mobile: Featured asym ============ */
+@media (max-width: 720px) {
+  .ftr-big-meta h3 { font-size: clamp(22px, 6vw, 30px) !important; }
+  .ftr-big-meta p { font-size: 14px; }
+  .ftr-small-num { font-size: 44px !important; }
+  .ftr-small-body h4 { font-size: 18px; }
+}
+
+/* ============ Mobile: Process terminal ============ */
+@media (max-width: 720px) {
+  .proc-term-body { padding: 16px 18px; font-size: 12px; }
+  .proc-step-line { grid-template-columns: 36px 16px 1fr; gap: 6px; padding: 6px 0; }
+  .proc-num { font-size: 10px; }
+  .proc-label { font-size: 11px; }
+  .proc-desc { grid-column: 1 / -1; padding-left: 56px; padding-top: 4px; font-size: 12.5px; line-height: 1.45; }
+}
+
+/* ============ Mobile: CTA big ============ */
+@media (max-width: 720px) {
+  .cta-big { padding: 60px 20px; }
+  .cta-big h2 { font-size: clamp(28px, 8vw, 44px) !important; }
+}
+
+/* ============ Mobile: Ticker / marquee ============ */
+@media (max-width: 720px) {
+  .ft-ticker-track { gap: 24px; }
+  .ft-ticker-item { font-size: 11px; }
+  .ft-bigmarquee-track { gap: 24px; }
+  .ft-word { font-size: clamp(36px, 12vw, 64px) !important; }
+}
+
+/* ============ Mobile: About duo ============ */
+@media (max-width: 720px) {
+  .duo-A-name { font-size: clamp(22px, 6vw, 30px) !important; }
+  .duo-A-role { font-size: 15px; }
+  .duo-A-bio { font-size: 14px; line-height: 1.55; }
+  .duo-A-body { padding: 24px 22px; }
+  .duo-A-portrait { aspect-ratio: 5 / 5.5; }
+}
+
+/* ============ Mobile: Experience columns ============ */
+@media (max-width: 720px) {
+  .exp-col-head { gap: 10px; margin-bottom: 24px; }
+  .exp-col-name { font-size: clamp(22px, 6vw, 32px) !important; }
+  .exp-items { gap: 24px; }
+  .exp-item { padding-left: 16px; }
+  .exp-name { font-size: 18px; }
+  .exp-desc { font-size: 13.5px; max-width: 100%; }
+}
+
+/* ============ Mobile: Diplomas ============ */
+@media (max-width: 720px) {
+  .dip-row { grid-template-columns: 90px 1fr !important; gap: 16px !important; padding: 24px 0 !important; }
+  .dip-year { font-size: clamp(36px, 9vw, 56px) !important; }
+  .dip-name { font-size: clamp(17px, 5vw, 24px) !important; }
+  .dip-school { font-size: 11px; }
+  .dip-who { grid-column: 2; font-size: 10px; }
+}
+
+/* ============ Mobile: Manifest letter ============ */
+@media (max-width: 720px) {
+  .manifest-letter { padding: 60px 0; }
+  .letter { padding: 32px 22px 28px; }
+  .letter-stamp { top: 14px; right: 14px; transform: rotate(-6deg) scale(0.75); }
+  .letter-greeting { font-size: clamp(22px, 6.5vw, 32px) !important; margin-bottom: 24px; }
+  .letter-body { font-size: 15px !important; line-height: 1.55; gap: 14px; }
+  .letter-sign-names { font-size: clamp(20px, 5vw, 28px) !important; }
+}
+
+/* ============ Mobile: Projects rows ============ */
+@media (max-width: 720px) {
+  .project-row { gap: 18px; }
+  .pr-art { padding: 18px; aspect-ratio: 16 / 11; }
+  .pr-meta h3 { font-size: clamp(26px, 7vw, 40px) !important; }
+}
+
+/* ============ Mobile: Stack dial ============ */
+@media (max-width: 720px) {
+  .dial-block { gap: 32px; }
+  .dial-stage { width: 240px; height: 240px; margin: 0 auto; }
+  .dial-btn {
+    width: 64px; height: 64px; margin: -32px;
+    transform: rotate(var(--angle)) translateY(-88px) rotate(var(--counter));
+  }
+  .dial-btn.is-active {
+    transform: rotate(var(--angle)) translateY(-88px) rotate(var(--counter)) scale(1.08);
+  }
+  .dial-btn-sym { font-size: 14px; }
+  .dial-readout-cat { font-size: 16px; }
+  .dial-tech { grid-template-columns: 26px 1fr 32px; gap: 10px; padding: 14px 0; }
+  .dial-tech-bar { grid-column: 1 / -1; }
+  .dial-tech-name { font-size: 18px !important; }
+}
+@media (max-width: 380px) {
+  .dial-stage { width: 210px; height: 210px; }
+  .dial-btn {
+    width: 56px; height: 56px; margin: -28px;
+    transform: rotate(var(--angle)) translateY(-76px) rotate(var(--counter));
+  }
+  .dial-btn.is-active {
+    transform: rotate(var(--angle)) translateY(-76px) rotate(var(--counter)) scale(1.08);
+  }
+}
+
+/* ============ Mobile: GitHub profile cards ============ */
+@media (max-width: 720px) {
+  .gh-profile { padding: 24px 20px; gap: 14px; }
+  .gh-profile-head { grid-template-columns: 64px 1fr; gap: 14px; }
+  .gh-avatar { width: 64px; height: 64px; }
+  .gh-handle { font-size: 22px !important; }
+  .gh-repo { padding: 12px 14px; }
+  .gh-repo-name { font-size: 13px; }
+  .gh-repo-desc { font-size: 12.5px; }
+  .gh-repo-meta { gap: 12px; font-size: 9.5px; }
+}
+
+/* ============ Mobile: Departures board ============ */
+@media (max-width: 720px) {
+  .brd { padding: 14px; }
+  .brd-frame { padding: 12px 14px 12px; }
+  .brd-head { gap: 8px; padding-bottom: 10px; }
+  .brd-head-title { font-size: 10px; letter-spacing: 0.18em; }
+  .brd-head-clock { font-size: 12px; }
+  .brd-cols, .brd-row { grid-template-columns: 48px 1fr 70px; gap: 8px; }
+  .brd-col-type, .brd-col-gate, .brd-col-year { display: none; }
+  .brd-time { font-size: 15px !important; }
+  .brd-name { font-size: 12px; }
+  .brd-row { padding: 12px 4px; font-size: 11px; }
+  .brd-status-pill { font-size: 8.5px; padding: 3px 7px; letter-spacing: 0.12em; }
+}
+
+/* ============ Mobile: Contact postcard ============ */
+@media (max-width: 720px) {
+  .pc { transform: rotate(0deg); padding: 0; min-height: 0; }
+  .pc:hover { transform: rotate(0deg); }
+  .pc-divider { display: none; }
+  .pc-left, .pc-right { padding: 24px 20px; }
+  .pc-greet-text { font-size: clamp(22px, 6.5vw, 30px); }
+  .pc-stamp { width: 90px; height: 110px; }
+  .pc-stamp-art { font-size: 28px; }
+  .pc-postmark { top: 14px; right: 14px; width: 76px; height: 76px; }
+  .pc-prose { font-size: 16px !important; line-height: 1.7; }
+  .pc-signoff { gap: 10px; padding-top: 14px; }
+  .pc-signoff-name { font-size: clamp(22px, 6vw, 30px) !important; }
+  .pc-send { padding: 12px 18px; font-size: 13px; }
+}
+
+/* ============ Mobile: Contact sidebar combined tag ============ */
+@media (max-width: 720px) {
+  .pc-tag-block--combined { transform: rotate(0deg) !important; padding: 22px 20px 20px; }
+  .pc-tag-block--combined:hover { transform: rotate(0deg) translateY(-3px) !important; }
+  .pc-tag-label { font-size: 20px; }
+  .pc-tag-list li { font-size: 12.5px; }
+  .pc-tape { left: 22px; }
+  .pc-watch-svg { width: 52px !important; height: 52px !important; }
+  .pc-watch-time { font-size: 12px; }
+  .pc-watch-tz { font-size: 8px; }
+}
+
+/* ============ Mobile: Footer ============ */
+@media (max-width: 720px) {
+  .footer { padding: 48px 0 24px; margin-top: 60px; }
+  .footer-marquees { margin-bottom: 40px; }
+  .footer-grid { gap: 32px 20px; }
+}
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ============ Mobile: Tweaks panel — hide on tiny screens ============ */
+@media (max-width: 480px) {
+  .tweaks-panel { right: 8px !important; bottom: 8px !important; max-width: calc(100vw - 16px) !important; }
+}
+
+/* ============ Mobile: Pharmacy demo — let parent container size it ============ */
+@media (max-width: 480px) {
+  .pha-grid { grid-template-columns: 1fr; gap: 6px; }
+  .pha-head h3 { font-size: 13px; }
+  .pha-card { padding: 9px; }
+}
+
+
+/* ============ Mobile v2 — Preserve formats, scale dims ============ */
+
+/* ===== HERO: keep two-column SPLIT format proportionally scaled (then stack only below 600px) ===== */
+@media (max-width: 980px) and (min-width: 601px) {
+  .hero-split { grid-template-columns: 1.1fr 1fr; gap: 24px; }
+  .hero-title { font-size: clamp(34px, 6vw, 64px) !important; }
+  .hero-art { min-height: 380px; }
+}
+@media (max-width: 600px) {
+  .hero-split { grid-template-columns: 1fr; gap: 24px; }
+  .hero-title { font-size: clamp(30px, 9vw, 48px) !important; line-height: 1; }
+  .hero-art {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+    transform-origin: top left;
+    margin-top: 8px;
+  }
+  .hero-comp { transform: scale(0.85); transform-origin: top left; }
+}
+
+/* ===== SERVICES showcase: redesign — horizontal swipeable cards on mobile ===== */
+@media (max-width: 720px) {
+  .srv-show { grid-template-columns: 1fr !important; gap: 24px; }
+  .srv-show-list {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 4px 0 12px;
+    border-top: 0;
+    margin-bottom: 0;
+    scrollbar-width: none;
+  }
+  .srv-show-list::-webkit-scrollbar { display: none; }
+  .srv-show-item {
+    flex: 0 0 auto;
+    padding: 10px 16px !important;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    scroll-snap-align: start;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  .srv-show-item.is-active {
+    padding-left: 16px !important;
+    background: var(--c-item, var(--accent));
+    color: var(--ink);
+    border-color: var(--c-item, var(--accent));
+  }
+  .srv-show-item.is-active::before { display: none; }
+  .srv-show-item.is-active .srv-show-n,
+  .srv-show-item.is-active .srv-show-name { color: var(--ink); }
+  .srv-show-name { font-size: 14px !important; }
+  .srv-show-arrow { display: none; }
+  .srv-show-stage { position: static; }
+}
+
+/* ===== FEATURED DECK: keep stacked format, just scale ===== */
+@media (max-width: 720px) {
+  .deck-stage { aspect-ratio: 4 / 5; max-width: 100%; perspective: 1200px; }
+  .deck-card { grid-template-columns: 1fr; padding: 18px; gap: 12px; }
+  .deck-card-visual { aspect-ratio: 16/10; }
+  .deck-card-title { font-size: clamp(20px, 5.5vw, 30px) !important; }
+  .deck-card-desc { font-size: 13px; }
+  .deck-card-tags { display: none; }
+  .deck-controls { flex-wrap: nowrap; }
+  .deck-dot-name { display: none; }
+}
+
+/* ===== DEPARTURES BOARD: keep table format, just shrink columns ===== */
+@media (max-width: 720px) {
+  .brd-cols, .brd-row {
+    grid-template-columns: 56px 1fr auto !important;
+    gap: 10px !important;
+  }
+  .brd-col-type, .brd-col-year, .brd-col-gate { display: none; }
+  .brd-time { font-size: 16px !important; }
+  .brd-name { font-size: 13px; }
+  .brd-row { padding: 12px 4px; }
+  .brd-status-pill { font-size: 9px; padding: 3px 7px; letter-spacing: 0.1em; }
+  .brd-head-title { font-size: 10px; letter-spacing: 0.16em; }
+}
+
+/* ===== CONTACT POSTCARD: keep the postcard format, scale via transform ===== */
+@media (max-width: 880px) and (min-width: 601px) {
+  .pc { grid-template-columns: 1.05fr 0.95fr; transform: rotate(-0.5deg) scale(0.95); transform-origin: top center; }
+  .pc-left, .pc-right { padding: 28px 26px; }
+  .pc-stamp { width: 90px; height: 110px; }
+  .pc-stamp-art { font-size: 28px; }
+  .pc-postmark { right: 110px; width: 80px; height: 80px; }
+  .pc-greet-text { font-size: 22px; }
+  .pc-input { font-size: 15px; }
+  .pc-signoff-name { font-size: 22px !important; }
+}
+@media (max-width: 600px) {
+  /* Below 600px, the postcard format truly can't hold both sides — redesign as single column but keep paper aesthetic */
+  .pc {
+    grid-template-columns: 1fr !important;
+    transform: rotate(0deg) !important;
+    padding: 0;
+  }
+  .pc:hover { transform: rotate(0deg) !important; }
+  .pc-divider { display: none; }
+  .pc-left, .pc-right { padding: 22px 18px; }
+  .pc-right { padding-top: 6px; border-top: 1px dashed rgba(42, 30, 20, 0.18); }
+  /* Move stamp/postmark to the top inline */
+  .pc-stamp { position: absolute; top: 12px; right: 12px; width: 64px; height: 80px; padding: 4px; }
+  .pc-stamp-art { font-size: 22px; }
+  .pc-stamp-foot { font-size: 6px; }
+  .pc-postmark { position: absolute; top: 26px; right: 80px; width: 60px; height: 60px; }
+  .pc-greet { padding-right: 90px; }
+  .pc-greet-text { font-size: 20px; }
+  .pc-input { font-size: 16px; padding: 6px 0 8px; }
+  .pc-input::placeholder { font-size: 14px; }
+  .pc-textarea { min-height: 80px; }
+  .pc-signoff-name { font-size: 22px !important; }
+  .pc-send { width: 100%; }
+}
+
+/* ===== STACK DIAL: keep the dial visual, scale proportionally ===== */
+@media (max-width: 720px) {
+  .dial-block { grid-template-columns: 1fr; gap: 36px; }
+  .dial-stage { width: 280px; height: 280px; margin: 0 auto; }
+  .dial-btn {
+    width: 76px; height: 76px; margin: -38px;
+    transform: rotate(var(--angle)) translateY(-102px) rotate(var(--counter));
+  }
+  .dial-btn.is-active {
+    transform: rotate(var(--angle)) translateY(-102px) rotate(var(--counter)) scale(1.08);
+  }
+  .dial-readout-cat { font-size: 17px; }
+  .dial-tech { grid-template-columns: 28px 1fr 32px; gap: 12px; }
+  .dial-tech-bar { grid-column: 1 / -1; height: 3px; }
+  .dial-tech-name { font-size: 19px !important; }
+}
+@media (max-width: 380px) {
+  .dial-stage { width: 240px; height: 240px; }
+  .dial-btn {
+    width: 64px; height: 64px; margin: -32px;
+    transform: rotate(var(--angle)) translateY(-88px) rotate(var(--counter));
+  }
+  .dial-btn.is-active {
+    transform: rotate(var(--angle)) translateY(-88px) rotate(var(--counter)) scale(1.08);
+  }
+}
+
+/* ===== ABOUT DUO: keep magazine format, scale proportionally ===== */
+@media (max-width: 880px) and (min-width: 601px) {
+  .duo-distinct { grid-template-columns: 1fr 1fr !important; gap: 18px; }
+  .duo-A-body { padding: 24px 20px; }
+  .duo-A-name { font-size: clamp(20px, 3vw, 26px) !important; }
+  .duo-A-bio { font-size: 13.5px; }
+}
+@media (max-width: 600px) {
+  .duo-distinct { grid-template-columns: 1fr !important; gap: 20px; }
+  .duo-A-portrait { aspect-ratio: 5 / 4; }
+  .duo-A-body { padding: 24px 22px; }
+}
+
+/* ===== MANIFEST LETTER: keep paper aesthetic, scale ===== */
+@media (max-width: 720px) {
+  .letter { padding: 28px 22px 24px; }
+  .letter-stamp { transform: rotate(-6deg) scale(0.7); }
+  .letter-stamp-circle { width: 44px; height: 44px; }
+  .letter-greeting { font-size: clamp(20px, 5.5vw, 28px) !important; margin: 0 0 24px; }
+  .letter-body { font-size: 15px !important; gap: 14px; }
+}
+
+/* ===== PROJECTS rows: keep alternating format proportionally ===== */
+@media (max-width: 880px) and (min-width: 601px) {
+  .project-row { grid-template-columns: 1fr 1fr !important; gap: 28px; }
+  .pr-art { aspect-ratio: 16/11; padding: 20px; }
+  .pr-meta h3 { font-size: clamp(24px, 4.5vw, 40px) !important; }
+}
+@media (max-width: 600px) {
+  .project-row { grid-template-columns: 1fr !important; gap: 18px; }
+  .pr-art { aspect-ratio: 16/10; padding: 14px; }
+}
+
+/* ===== EXPERIENCES: 2-col → keep with thinner columns first, stack only below 600px ===== */
+@media (max-width: 880px) and (min-width: 601px) {
+  .exp-cols { grid-template-columns: 1fr 1fr !important; gap: 32px; }
+  .exp-name { font-size: 17px; }
+  .exp-desc { font-size: 13px; }
+}
+
+/* ===== Footer big marquee: scale text ===== */
+@media (max-width: 720px) {
+  .ft-bigmarquee-track { gap: 22px; }
+  .ft-word { font-size: clamp(28px, 11vw, 56px) !important; }
+}
+
+/* ===== Hero composition: scale via transform on small mobile ===== */
+@media (max-width: 480px) {
+  .hero-comp { transform: scale(0.78); transform-origin: top left; }
+  .hero-art { aspect-ratio: 4 / 2.4; min-height: 0; }
+}
+
+
+/* ============ Mobile v3 — AGGRESSIVE fixes for 360-480px ============
+   Based on real Samsung Galaxy S8+ screenshots at 360px.
+   Goal: zero horizontal overflow, readable text, proper wrapping.
+   ====================================================================== */
+
+/* ---- Hard guarantee no horizontal overflow ---- */
+@media (max-width: 720px) {
+  html, body, main, section, .wrap {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  h1, h2, h3, .display, .display-i, .hero-title {
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    hyphens: auto;
+  }
+}
+
+/* ---- HERO at 360px-480px ---- */
+@media (max-width: 480px) {
+  .hero { padding: 16px 0 12px !important; }
+  .hero-split { grid-template-columns: 1fr !important; gap: 20px; }
+  .hero-title,
+  h1.hero-title.display {
+    font-size: clamp(26px, 7.5vw, 32px) !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.025em !important;
+  }
+  .hero-lead { font-size: 13.5px !important; line-height: 1.5; margin-top: 16px !important; }
+  .hero-actions { gap: 8px !important; }
+  .hero-actions .btn { flex: 1 1 100%; font-size: 13.5px; padding: 11px 16px; min-width: 0; }
+  .hero-art {
+    min-height: 0 !important;
+    aspect-ratio: 4 / 2.2 !important;
+    margin-top: 12px;
+    overflow: hidden;
+  }
+  .hero-comp { transform: scale(0.55) !important; transform-origin: top left !important; width: 180% !important; }
+}
+
+@media (max-width: 380px) {
+  .hero-title,
+  h1.hero-title.display {
+    font-size: clamp(22px, 7vw, 28px) !important;
+  }
+  .hero-comp { transform: scale(0.48) !important; width: 205% !important; }
+}
+
+/* ---- Section headings ---- */
+@media (max-width: 480px) {
+  .sec-head { gap: 12px; margin-bottom: 28px; }
+  .sec-head h2 { font-size: clamp(22px, 6.5vw, 30px) !important; line-height: 1.05; }
+  .sec-head p { font-size: 13px !important; }
+}
+
+/* ---- Services showcase ---- */
+@media (max-width: 480px) {
+  .srv-show { grid-template-columns: 1fr !important; gap: 18px !important; }
+  .srv-show-name { font-size: 17px !important; }
+  .srv-show-desc { font-size: 16px !important; line-height: 1.35; }
+  .srv-show-frame { aspect-ratio: 16 / 11 !important; padding: 0; }
+}
+
+/* ---- Buttons / CTAs ---- */
+@media (max-width: 480px) {
+  .btn { font-size: 13px; padding: 10px 16px; }
+  .cta-big { padding: 40px 16px !important; }
+  .cta-big h2 { font-size: clamp(24px, 7vw, 36px) !important; line-height: 1; }
+}
+
+/* ---- Footer big marquee (was way too big) ---- */
+@media (max-width: 720px) {
+  .ft-bigmarquee-track { gap: 18px !important; }
+  .ft-word, .ft-word--sans, .ft-word--italic, .ft-word--outline {
+    font-size: clamp(22px, 8vw, 40px) !important;
+    letter-spacing: -0.03em !important;
+  }
+  .ft-word--outline { -webkit-text-stroke-width: 1px; }
+  .ft-sep { font-size: clamp(14px, 4vw, 24px) !important; }
+}
+@media (max-width: 480px) {
+  .ft-word, .ft-word--sans, .ft-word--italic, .ft-word--outline {
+    font-size: clamp(20px, 7vw, 32px) !important;
+  }
+}
+
+/* ---- Footer ticker (small mono items) ---- */
+@media (max-width: 480px) {
+  .ft-ticker-item { font-size: 10px; }
+  .ft-ticker-track { gap: 20px; }
+}
+
+/* ---- Departures board: truncate long project names ---- */
+@media (max-width: 480px) {
+  .brd { padding: 12px !important; }
+  .brd-frame { padding: 10px 12px !important; }
+  .brd-cols, .brd-row {
+    grid-template-columns: 48px 1fr auto !important;
+    gap: 8px !important;
+  }
+  .brd-col-type, .brd-col-year, .brd-col-gate { display: none !important; }
+  .brd-time { font-size: 14px !important; }
+  .brd-name {
+    font-size: 11px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    min-width: 0;
+  }
+  .brd-row { padding: 11px 4px !important; }
+  .brd-status-pill { font-size: 8px !important; padding: 2px 6px !important; letter-spacing: 0.08em !important; }
+  .brd-status-pill span:last-child { display: none; }
+  .brd-head-title { font-size: 9px !important; letter-spacing: 0.14em; }
+  .brd-head-clock { font-size: 11px !important; }
+}
+
+/* ---- Process terminal ---- */
+@media (max-width: 480px) {
+  .proc-term-body { padding: 14px 14px !important; font-size: 11.5px !important; }
+  .proc-step-line { grid-template-columns: 32px 14px 1fr; gap: 6px !important; }
+  .proc-num { font-size: 9.5px !important; }
+  .proc-label { font-size: 10.5px !important; }
+  .proc-desc { grid-column: 1 / -1; padding-left: 52px !important; padding-top: 4px; font-size: 12px !important; }
+}
+
+/* ---- Featured deck ---- */
+@media (max-width: 480px) {
+  .deck-stage { aspect-ratio: 3 / 4 !important; }
+  .deck-card { padding: 14px !important; }
+  .deck-card-title { font-size: 19px !important; }
+  .deck-card-desc { font-size: 12.5px; }
+  .deck-arr { width: 36px; height: 36px; }
+  .deck-dots { padding: 4px 6px; }
+  .deck-dot { padding: 6px 10px; font-size: 11px; }
+}
+
+/* ---- About duo / experiences ---- */
+@media (max-width: 480px) {
+  .duo-A-name { font-size: 22px !important; }
+  .duo-A-bio { font-size: 13.5px; }
+  .duo-A-body { padding: 22px 18px !important; }
+  .exp-col-name { font-size: 22px !important; }
+  .exp-name { font-size: 16px !important; }
+  .exp-desc { font-size: 13px; }
+  .dip-row { grid-template-columns: 80px 1fr !important; gap: 14px !important; padding: 20px 0 !important; }
+  .dip-year { font-size: 36px !important; }
+  .dip-name { font-size: 17px !important; }
+}
+
+/* ---- Manifest letter ---- */
+@media (max-width: 480px) {
+  .manifest-letter { padding: 50px 0 !important; }
+  .letter { padding: 24px 18px 22px !important; }
+  .letter-stamp { transform: rotate(-6deg) scale(0.55) !important; }
+  .letter-greeting { font-size: 19px !important; margin: 0 0 20px !important; }
+  .letter-body { font-size: 14px !important; gap: 12px !important; line-height: 1.55; }
+  .letter-sign-names { font-size: 19px !important; }
+}
+
+/* ---- Contact postcard ---- */
+@media (max-width: 480px) {
+  .pc { padding: 0 !important; transform: rotate(0deg) !important; }
+  .pc:hover { transform: rotate(0deg) !important; }
+  .pc-left, .pc-right { padding: 20px 16px !important; }
+  .pc-greet { padding-right: 86px; }
+  .pc-greet-text { font-size: 18px !important; }
+  .pc-date { font-size: 9.5px !important; }
+  .pc-stamp { width: 62px !important; height: 78px !important; padding: 4px !important; top: 12px !important; right: 12px !important; }
+  .pc-stamp-art { font-size: 20px !important; }
+  .pc-stamp-foot { font-size: 5.5px !important; }
+  .pc-postmark { width: 56px !important; height: 56px !important; top: 24px !important; right: 78px !important; }
+  .pc-field-l { font-size: 10.5px !important; }
+  .pc-input { font-size: 14px !important; padding: 4px 0 6px !important; }
+  .pc-textarea { min-height: 70px !important; font-size: 14px !important; }
+  .pc-signoff { gap: 8px !important; padding-top: 12px !important; }
+  .pc-signoff-prefix { font-size: 16px !important; }
+  .pc-signoff-name { font-size: 20px !important; }
+  .pc-send { width: 100%; padding: 11px 16px !important; font-size: 12.5px !important; }
+}
+
+/* ---- Tags / tech-tag ---- */
+@media (max-width: 480px) {
+  .tag { font-size: 10px !important; padding: 4px 8px !important; }
+  .tech-tag { font-size: 9px !important; padding: 3px 7px !important; }
+}
+
+/* ---- Footer columns: links/headers ---- */
+@media (max-width: 480px) {
+  .footer { padding: 56px 0 24px !important; margin-top: 56px !important; }
+  .footer-marquees { margin-bottom: 36px !important; }
+  .footer h4 { font-size: 9.5px !important; letter-spacing: 0.16em; margin-bottom: 14px !important; }
+  .footer-links a { font-size: 13.5px !important; }
+}
+
+
+/* ============ Mobile v4 — feedback fixes ============ */
+
+/* 1. HERO ILLUSTRATIONS — center-scaled with all 3 mockups + animations */
+@media (max-width: 720px) {
+  .hero-art {
+    position: relative !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    margin-top: 12px !important;
+    overflow: hidden !important;
+    border-radius: var(--r-lg);
+    height: 300px !important;
+    aspect-ratio: auto !important;
+  }
+  /* Render at fixed "design" dimensions, center-scaled to fit. */
+  .hero-comp {
+    width: 600px !important;
+    height: 420px !important;
+    position: absolute !important;
+    top: 50%; left: 50%;
+    margin: -210px 0 0 -300px !important;
+    transform-origin: center !important;
+    transform: scale(0.70) !important;
+  }
+  .hero-comp-phone,
+  .hero-comp-term { display: block !important; }
+  .hero-comp-main { animation: floatB 8.5s ease-in-out infinite !important; }
+  .hero-comp-phone { animation: floatY 7s ease-in-out infinite !important; }
+  .hero-comp-term { animation: floatY 9s ease-in-out infinite 1s !important; }
+}
+@media (max-width: 600px) {
+  .hero-art { height: 260px !important; }
+  .hero-comp { transform: scale(0.58) !important; }
+}
+@media (max-width: 480px) {
+  .hero-art { height: 230px !important; }
+  .hero-comp { transform: scale(0.50) !important; }
+}
+@media (max-width: 380px) {
+  .hero-art { height: 200px !important; }
+  .hero-comp { transform: scale(0.42) !important; }
+}
+
+/* 2. SERVICES SCROLL HINT — visible cue that horizontal swipe is possible */
+@media (max-width: 720px) {
+  .srv-show-list {
+    position: relative;
+    padding-right: 36px !important;
+    -webkit-mask-image: linear-gradient(90deg, black 0%, black 85%, transparent 100%);
+            mask-image: linear-gradient(90deg, black 0%, black 85%, transparent 100%);
+  }
+  .srv-show {
+    position: relative;
+  }
+  .srv-show::after {
+    content: '→ swipe';
+    position: absolute;
+    top: -22px; right: 4px;
+    font-family: var(--f-mono);
+    font-size: 9.5px;
+    color: var(--lime);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    pointer-events: none;
+    animation: srvScrollHint 2s ease-in-out infinite;
+  }
+  @keyframes srvScrollHint {
+    0%, 100% { transform: translateX(0); opacity: 0.85; }
+    50% { transform: translateX(6px); opacity: 1; }
+  }
+  /* Make items visually look pressable */
+  .srv-show-item {
+    background: var(--card) !important;
+    border-color: var(--line-strong) !important;
+  }
+}
+
+/* 3. FOOTER — centered, styled, more visual ============ */
+@media (max-width: 480px) {
+  .footer { text-align: center; padding-bottom: 32px !important; }
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+    text-align: center;
+    padding-bottom: 36px !important;
+  }
+  .footer h4 {
+    justify-content: center;
+    font-size: 10px !important;
+    letter-spacing: 0.22em !important;
+  }
+  .footer h4::before,
+  .footer h4::after {
+    content: '';
+    width: 24px; height: 1px;
+    background: var(--lime);
+  }
+  .footer h4::after { background: var(--lime); }
+
+  .footer-links {
+    align-items: center;
+    gap: 14px !important;
+  }
+  .footer-links a {
+    justify-content: center;
+    width: 100%;
+    max-width: 280px;
+    font-size: 14px !important;
+  }
+  /* Footer first column (logo + tagline) on mobile */
+  .footer-grid > div:first-child {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .footer-grid > div:first-child .nav-logo {
+    justify-content: center;
+  }
+  .footer-grid > div:first-child p {
+    text-align: center;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+  .footer-grid > div:first-child .tag {
+    margin-top: 18px;
+  }
+
+  /* Bottom row (legal + built with) — center stack */
+  .footer .wrap > div:last-child {
+    justify-content: center !important;
+    text-align: center;
+  }
+  .footer .wrap > div:last-child > div {
+    align-items: center !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 720px) and (min-width: 481px) {
+  .footer-grid { gap: 32px 28px !important; }
+  .footer h4 { display: flex; align-items: center; gap: 10px; }
+}
+
+
+/* ============ Mobile v5 — services pill active = lime fill ============ */
+@media (max-width: 720px) {
+  .srv-show-item {
+    background: var(--card) !important;
+    border-color: var(--line-strong) !important;
+    transition: all 0.25s ease !important;
+  }
+  .srv-show-item .srv-show-n,
+  .srv-show-item .srv-show-name {
+    color: var(--fg) !important;
+  }
+  .srv-show-item.is-active,
+  .srv-show-item:hover,
+  .srv-show-item:active {
+    background: var(--lime) !important;
+    border-color: var(--lime) !important;
+    color: var(--ink) !important;
+    box-shadow: 0 4px 12px rgba(213, 242, 94, 0.25);
+  }
+  .srv-show-item.is-active .srv-show-n,
+  .srv-show-item.is-active .srv-show-name,
+  .srv-show-item:hover .srv-show-n,
+  .srv-show-item:hover .srv-show-name,
+  .srv-show-item:active .srv-show-n,
+  .srv-show-item:active .srv-show-name {
+    color: var(--ink) !important;
+  }
+}
+
+
+/* ============ Mobile v6 — service frame mockups scale-fit ============
+   The real-content mockups (SiteRealMockup, ShopRealMockup, AppRealMockup,
+   SwaggerMockup) were designed for ~480px wide. At 340px wide inside the
+   service frame on mobile, their inner content overflows. Solution: scale
+   the inner mockup proportionally to fit, using a wrapper transform.
+   ======================================================================== */
+
+@media (max-width: 720px) {
+  .srv-slot.is-active {
+    overflow: hidden;
+  }
+  .srv-show-frame {
+    position: relative;
+    overflow: hidden;
+  }
+  /* Force the mockup inner content to render at a wider "design" width,
+     then scale it down to fit. Each mockup renders best at ~480px wide. */
+  .srv-slot--real > .rsite,
+  .srv-slot--real > .rshop,
+  .srv-slot--real > .rapp,
+  .srv-slot--real > .swg {
+    width: 480px !important;
+    height: auto;
+    min-height: 100%;
+    transform: scale(calc(100% / 480 * 100));
+    transform-origin: top left;
+  }
+  /* Use a wrapper trick instead: rescale via transform that maps 480 to 100% of frame */
+  /* Simpler: just scale the whole mockup down using transform: scale() */
+  .srv-slot--real .rsite,
+  .srv-slot--real .rshop,
+  .srv-slot--real .rapp,
+  .srv-slot--real .swg {
+    width: 480px !important;
+    height: 270px !important;
+    transform-origin: 0 0;
+  }
+}
+
+/* Apply the actual scale value based on container width.
+   Frame is roughly 320px wide on mobile, mockup is 480px → scale 0.667 */
+@media (max-width: 720px) and (min-width: 481px) {
+  .srv-slot--real .rsite,
+  .srv-slot--real .rshop,
+  .srv-slot--real .rapp,
+  .srv-slot--real .swg {
+    transform: scale(0.85);
+    width: 480px !important;
+  }
+}
+@media (max-width: 480px) {
+  .srv-show-frame {
+    aspect-ratio: 16 / 11 !important;
+  }
+  .srv-slot--real .rsite,
+  .srv-slot--real .rshop,
+  .srv-slot--real .rapp,
+  .srv-slot--real .swg {
+    transform: scale(0.62);
+    width: 480px !important;
+    height: 320px !important;
+  }
+}
+@media (max-width: 380px) {
+  .srv-slot--real .rsite,
+  .srv-slot--real .rshop,
+  .srv-slot--real .rapp,
+  .srv-slot--real .swg {
+    transform: scale(0.55);
+  }
+}
