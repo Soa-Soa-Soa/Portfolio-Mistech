@@ -98,7 +98,7 @@ function Nav({ page, setPage, theme, setTheme, lang, setLang, t }) {
           <button className="icon-btn" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} aria-label="theme">
             {theme === 'light' ? <Icon.Moon /> : <Icon.Sun />}
           </button>
-          <button className="icon-btn" onClick={() => setOpen(!open)} aria-label="menu" style={{ display: 'none' }} id="mobile-menu-btn">
+          <button className="icon-btn" onClick={() => setOpen(!open)} aria-label="menu" id="mobile-menu-btn">
             {open ? <Icon.X /> : <Icon.Menu />}
           </button>
         </div>
@@ -174,24 +174,30 @@ function Footer({ t, setPage, lang }) {
           <div>
             <h4>{f.reach}</h4>
             <div className="footer-links">
-              <a href="mailto:hello@mistech.mg">hello@mistech.mg</a>
+              <a href="mailto:ainasoasoa@gmail.com">ainasoasoa@gmail.com</a>
+              <a href="mailto:tsikiniony.jr@gmail.com">tsikiniony.jr@gmail.com</a>
+              <a href="tel:+261380839724">+261 38 08 397 24</a>
               <a href="tel:+261382186660">+261 38 21 866 60</a>
-              <a href="#">GitHub</a>
-              <a href="#">LinkedIn</a>
             </div>
           </div>
           <div>
-            <h4>{lang === 'fr' ? 'Localisation' : 'Location'}</h4>
+            <h4>{lang === 'fr' ? 'Réseaux' : 'Social'}</h4>
             <div className="footer-links">
-              <a>Antananarivo</a>
-              <a>Madagascar</a>
-              <a style={{ color: 'var(--fg-soft)' }}>UTC +3 · GMT+3</a>
+              <a href="https://github.com/Soa-Soa-Soa" target="_blank" rel="noopener noreferrer">GitHub · Fenosoa</a>
+              <a href="https://github.com/Tsikiniony" target="_blank" rel="noopener noreferrer">GitHub · Brady</a>
+              <a href="https://www.linkedin.com/in/fenosoa-eliane-tovoniaina-ab84a6362" target="_blank" rel="noopener noreferrer">LinkedIn · Fenosoa</a>
+              <a href="https://www.linkedin.com/in/tsikiniony-brady-andriamalala-b85511281" target="_blank" rel="noopener noreferrer">LinkedIn · Brady</a>
             </div>
           </div>
         </div>
-        <div style={{ marginTop: 60, paddingTop: 24, borderTop: '1px solid var(--line)', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, fontSize: 13, color: 'var(--fg-soft)' }}>
-          <div>{f.legal}</div>
-          <div className="mono">{f.builtWith}</div>
+        <div style={{ marginTop: 48, paddingTop: 24, display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16, alignItems: 'baseline' }}>
+          <div className="display-i" style={{ fontSize: 'clamp(40px, 8vw, 80px)', lineHeight: 0.9, letterSpacing: '-0.04em' }}>
+            <span style={{ color: 'var(--fg)' }}>Mis</span><span style={{ color: 'var(--lime)' }}>Tech.</span>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 6, textAlign: 'right' }}>
+            <div className="mono" style={{ fontSize: 11, color: 'var(--fg-soft)', letterSpacing: '0.16em', textTransform: 'uppercase' }}>{f.legal}</div>
+            <div className="mono" style={{ fontSize: 11, color: 'var(--fg-soft)', letterSpacing: '0.16em', textTransform: 'uppercase' }}>{f.builtWith}</div>
+          </div>
         </div>
       </div>
     </footer>
