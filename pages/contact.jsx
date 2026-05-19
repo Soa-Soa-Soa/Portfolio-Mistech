@@ -199,7 +199,8 @@ function ContactPage({ t, setPage, lang }) {
                         onBlur={() => setFocused(null)}
                         autoComplete="off"
                       />
-                      <div className="pc-address-line mono">hello@mistech.mg</div>
+                      <div className="pc-address-line mono">ainasoasoa@gmail.com</div>
+                      <div className="pc-address-line mono">tsikiniony.jr@gmail.com</div>
                       <div className="pc-address-line mono">MisTech · Web Studio</div>
                       <div className="pc-address-line mono">Antananarivo · MG</div>
                     </div>
@@ -217,7 +218,7 @@ function ContactPage({ t, setPage, lang }) {
                       <span>
                         {isFr ? "L'envoi a échoué. " : "Sending failed. "}
                         {errorMsg && <span className="mono pc-error-detail">({errorMsg})</span>}
-                        <a className="pc-error-fallback" href={`mailto:hello@mistech.mg?subject=${encodeURIComponent(form.subject || (isFr ? 'Nouveau projet' : 'New project'))}&body=${encodeURIComponent((form.message || '') + '\n\n— ' + (form.name || ''))}`}>
+                        <a className="pc-error-fallback" href={`mailto:ainasoasoa@gmail.com,tsikiniony.jr@gmail.com?subject=${encodeURIComponent(form.subject || (isFr ? 'Nouveau projet' : 'New project'))}&body=${encodeURIComponent((form.message || '') + '\n\n— ' + (form.name || ''))}`}>
                           {isFr ? "Envoyer par mail directement" : "Send by email directly"} ↗
                         </a>
                       </span>
@@ -246,7 +247,9 @@ function ContactPage({ t, setPage, lang }) {
                 <PCInlineClock lang={lang} />
               </div>
               <ul className="pc-tag-list">
-                <li><Icon.Mail /> <a href="mailto:hello@mistech.mg">hello@mistech.mg</a></li>
+                <li><Icon.Mail /> <a href="mailto:ainasoasoa@gmail.com">ainasoasoa@gmail.com</a></li>
+                <li><Icon.Mail /> <a href="mailto:tsikiniony.jr@gmail.com">tsikiniony.jr@gmail.com</a></li>
+                <li><Icon.Phone /> <a href="tel:+261380839724">+261 38 08 397 24</a></li>
                 <li><Icon.Phone /> <a href="tel:+261382186660">+261 38 21 866 60</a></li>
                 <li><Icon.Pin /> {c.addr}</li>
                 <li><Icon.Github /> <a href="https://github.com/Soa-Soa-Soa" target="_blank" rel="noopener noreferrer">Soa-Soa-Soa</a></li>
