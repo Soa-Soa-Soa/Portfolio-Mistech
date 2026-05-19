@@ -343,7 +343,7 @@ function VideoSlot({ src, label }) {
         </div>
         <div className="video-viewport">
           {src ? (
-            <video className="video-el" src={src} controls preload="metadata" playsInline poster="" />
+            <video className="video-el" src={src} autoPlay loop muted playsInline preload="auto" />
           ) : null}
           <div className="video-placeholder">
             <div className="video-play-btn">▶</div>
