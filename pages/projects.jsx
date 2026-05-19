@@ -83,7 +83,7 @@ function ProjectRow({ proj, i, cardStyle, onOpen }) {
   return (
     <Reveal as="article" className={"project-row" + (flip ? " is-flip" : "") + " project-row--" + cardStyle} style={{ '--accent-card': proj.accent }}>
       <div className="pr-art">
-        <ProjectShape shape={proj.shape} accent={proj.accent} link={proj.link} videoSrc={proj.videoSrc} name={proj.name} />
+        <ProjectShape shape={proj.shape} accent={proj.accent} link={proj.link} videoSrc={proj.videoSrc} name={proj.name} slug={proj.slug} />
       </div>
       <div className="pr-meta">
         <div className="label" style={{ color: proj.accent }}>{proj.type}</div>
@@ -119,7 +119,7 @@ function ProjectModal({ proj, onClose }) {
       <div className="modal" onClick={e => e.stopPropagation()}>
         <button className="modal-close icon-btn" onClick={onClose} aria-label="close"><Icon.X /></button>
         <div className="modal-art">
-          <ProjectShape shape={proj.shape} accent={proj.accent} link={proj.link} videoSrc={proj.videoSrc} name={proj.name} />
+          <ProjectShape shape={proj.shape} accent={proj.accent} link={proj.link} videoSrc={proj.videoSrc} name={proj.name} slug={proj.slug} />
         </div>
         <div className="modal-body">
           <div className="label" style={{ color: proj.accent }}>{proj.n} / {proj.type} · {proj.year}</div>
