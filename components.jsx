@@ -190,10 +190,7 @@ function Footer({ t, setPage, lang }) {
             </div>
           </div>
         </div>
-        <div style={{ marginTop: 48, paddingTop: 24, display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16, alignItems: 'baseline' }}>
-          <div className="display-i" style={{ fontSize: 'clamp(40px, 8vw, 80px)', lineHeight: 0.9, letterSpacing: '-0.04em' }}>
-            <span style={{ color: 'var(--fg)' }}>Mis</span><span style={{ color: 'var(--lime)' }}>Tech.</span>
-          </div>
+        <div style={{ marginTop: 48, paddingTop: 24, display: 'flex', justifyContent: 'flex-end', flexWrap: 'wrap', gap: 16, alignItems: 'baseline' }}>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 6, textAlign: 'right' }}>
             <div className="mono" style={{ fontSize: 11, color: 'var(--fg-soft)', letterSpacing: '0.16em', textTransform: 'uppercase' }}>{f.legal}</div>
             <div className="mono" style={{ fontSize: 11, color: 'var(--fg-soft)', letterSpacing: '0.16em', textTransform: 'uppercase' }}>{f.builtWith}</div>
