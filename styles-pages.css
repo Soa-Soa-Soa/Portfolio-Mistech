@@ -4836,3 +4836,147 @@
     font-size: clamp(22px, 7vw, 28px) !important;
   }
 }
+
+
+/* ============ Mobile v8 — Projects page video/mockup containment ============
+   On project page rows, the .pr-art container has a fixed aspect-ratio that
+   crops the video and mockup content. On mobile, let the content size itself
+   so the full video/mockup is visible.
+   ============================================================================ */
+@media (max-width: 720px) {
+  .pr-art {
+    aspect-ratio: auto !important;
+    min-height: 0 !important;
+    padding: 14px !important;
+  }
+  .pr-art .video-slot,
+  .pr-art .live-preview,
+  .pr-art > .rsite,
+  .pr-art > .rshop,
+  .pr-art > .rapp,
+  .pr-art > .swg,
+  .pr-art .pha-app {
+    width: 100% !important;
+    max-width: 100% !important;
+    aspect-ratio: 16 / 11 !important;
+    height: auto !important;
+    transform: none !important;
+  }
+  /* The actual video inside should show its content from the top, not cropped */
+  .video-viewport {
+    aspect-ratio: 16 / 11 !important;
+  }
+  .video-el {
+    object-fit: contain !important;
+    background: #000 !important;
+  }
+  /* Live iframe preview screenshot — keep full image visible */
+  .live-viewport {
+    aspect-ratio: 16 / 11 !important;
+  }
+  .live-screenshot {
+    object-fit: contain !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .pr-art { padding: 10px !important; }
+  .pr-art .video-slot,
+  .pr-art .live-preview,
+  .pr-art > .rsite,
+  .pr-art > .rshop,
+  .pr-art > .rapp,
+  .pr-art > .swg,
+  .pr-art .pha-app {
+    aspect-ratio: 16 / 12 !important;
+  }
+  .video-viewport,
+  .live-viewport {
+    aspect-ratio: 16 / 12 !important;
+  }
+}
+
+
+/* ============ Mobile v9 — Tighter video framing (no big black bars) ============ */
+@media (max-width: 720px) {
+  .pr-art .video-slot,
+  .pr-art .live-preview,
+  .pr-art > .rsite,
+  .pr-art > .rshop,
+  .pr-art > .rapp,
+  .pr-art > .swg,
+  .pr-art .pha-app {
+    aspect-ratio: 4 / 3 !important;
+  }
+  .video-viewport,
+  .live-viewport {
+    aspect-ratio: 4 / 3 !important;
+  }
+  .video-el {
+    object-fit: cover !important;
+    object-position: center !important;
+    background: #0A0812 !important;
+  }
+  .live-screenshot {
+    object-fit: cover !important;
+    object-position: top center !important;
+  }
+}
+@media (max-width: 480px) {
+  .pr-art .video-slot,
+  .pr-art .live-preview,
+  .pr-art > .rsite,
+  .pr-art > .rshop,
+  .pr-art > .rapp,
+  .pr-art > .swg,
+  .pr-art .pha-app {
+    aspect-ratio: 5 / 4 !important;
+  }
+  .video-viewport,
+  .live-viewport {
+    aspect-ratio: 5 / 4 !important;
+  }
+}
+
+
+/* ============ Mobile v10 — Video uses contain, no side crop ============ */
+@media (max-width: 720px) {
+  .pr-art .video-slot,
+  .pr-art .live-preview,
+  .pr-art > .rsite,
+  .pr-art > .rshop,
+  .pr-art > .rapp,
+  .pr-art > .swg,
+  .pr-art .pha-app {
+    aspect-ratio: 16 / 10 !important;
+  }
+  .video-viewport,
+  .live-viewport {
+    aspect-ratio: 16 / 10 !important;
+  }
+  .video-el {
+    object-fit: contain !important;
+    object-position: center !important;
+    background: #0A0812 !important;
+  }
+  .live-screenshot {
+    object-fit: contain !important;
+    object-position: top center !important;
+    background: #0E0B18 !important;
+  }
+}
+@media (max-width: 480px) {
+  .pr-art .video-slot,
+  .pr-art .live-preview,
+  .pr-art > .rsite,
+  .pr-art > .rshop,
+  .pr-art > .rapp,
+  .pr-art > .swg,
+  .pr-art .pha-app {
+    aspect-ratio: 16 / 11 !important;
+  }
+  .video-viewport,
+  .live-viewport {
+    aspect-ratio: 16 / 11 !important;
+  }
+}
