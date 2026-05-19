@@ -224,13 +224,13 @@ function ContactPage({ t, setPage, lang }) {
                       </span>
                     </div>
                   )}
-                  {!EMAILJS_CONFIGURED && status !== 'error' && (
+                  {!EMAILJS_CONFIGURED && false && status !== 'error' && (
                     <div className="pc-error pc-error--info" role="status">
                       <span className="pc-error-icon">ⓘ</span>
                       <span className="mono">
                         {isFr
-                          ? "Mode démo — l'envoi est simulé. Renseignez les clés EmailJS dans pages/contact.jsx pour activer l'envoi réel."
-                          : "Demo mode — sending is simulated. Add EmailJS keys in pages/contact.jsx to enable real sending."}
+                          ? "Mode démo — l'envoi est simulé."
+                          : "Demo mode — sending is simulated."}
                       </span>
                     </div>
                   )}
